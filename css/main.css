@@ -90,6 +90,9 @@ nav a {
   background-size: cover;
   background-position: center;
 }
+.testimony {
+  text-align: center;
+}
 .testimony-img {
   width: 10em;
   height: 10em;
@@ -127,11 +130,11 @@ nav a {
 footer {
   margin-top: 2em;
   text-align: center;
-
-  background: url("../images/image_footer.jpg");
+  margin-bottom: 1em;
+  /* background: url("../images/image_footer.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center; */
 }
 .social-top {
   height: 150px;
@@ -177,7 +180,8 @@ footer {
   color: white;
 }
 @media screen and (min-width: 950px) {
-  .desktop-mobile {
+  .desktop-mobile,
+  .mobile {
     display: none;
   }
   .logo {
@@ -187,7 +191,7 @@ footer {
     display: block;
   }
   .side-bar {
-    background-color: #bca49d;
+    /* background-color: #bca49d; */
     width: 30%;
   }
   .main {
