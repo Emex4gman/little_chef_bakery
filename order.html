@@ -1,0 +1,171 @@
+<!-- This website template was created by: Project_G09 Chukwuemeka_Kamini_Saravpal C0799116_C0803319_C0810593 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      href="./images/cupcake.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Home - Little Chef Bakery</title>
+
+    <!-- <title>Project_G09 Chukwuemeka_Kamini_Saravpal</title> -->
+  </head>
+
+  <style></style>
+  <body>
+    <header>
+      <div class="brand_image">
+        <div class="desktop social-top">
+          <img src="./images/social/001-instagram.png" />
+          <img src="./images/social/002-facebook.png" />
+          <img src="./images/social/003-youtube.png" />
+          <img src="./images/social/004-whatsapp.png" />
+          <p>House no 23/3 near Mahavir mandir Samana,147101</p>
+          <p>+49 1234 56789-0</p>
+        </div>
+        <div class="logo">
+          <img
+            class="logo"
+            src="images/logo_transparent.png"
+            alt="Project_G09 Logo"
+          />
+        </div>
+      </div>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <nav class="desktop desktop-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="order">
+        <div id="container">
+        <div id="item">
+        <h3>SELECT TYPE OF ITEM:</h3>
+        <form>
+            <input type="checkbox" value="CAKES" class="checkboxItems">
+            <label for="CAKES">CAKES</label>
+            <input type="checkbox" value="DRY CAKES" class="checkboxItems">
+            <label for="DRY CAKE">DRY CAKE</label>
+            <input type="checkbox" value="BROWNIE" class="checkboxItems">
+            <label for="BROWNIE">BROWNIE</label>
+            <input type="checkbox" value="CUPCAKES" class="checkboxItems">
+            <label for="CUPCAKES">CUPCAKES</label>
+            <input type="checkbox" value="CHOCOLATES" class="checkboxItems">
+            <label for="CHOCOLATES">CHOCOLATES</label>
+        </form>
+        </div>
+        <div id="flavours">
+       
+            <h3>SELECT FLAVOUR FOR CAKE OR CUPCAKES:</h3>
+        <form>
+            <input type="radio" value="CHOCOLATE TRUFFLE" name="flavour">
+            <label for="CHOCOLATE TRUFFLE">CHOCOLATE TRUFFLE</label>
+            <input type="radio" value="STRAWBERRY" name="flavour">
+            <label for="STRAWBERRY">STRAWBERRY</label>
+            <input type="radio" value="BLUEBERRY" name="flavour">
+            <label for="BLUEBERRY">BLUEBERRY</label>
+            <input type="radio" value="PINEAPPLE" name="flavour">
+            <label for="PINEAPPLE">PINEAPPLE</label><br>
+            <input type="radio" value="OREO" name="flavour">
+            <label for="OREO">OREO</label>
+            <input type="radio" value="MIXED FRUIT" name="flavour">
+            <label for="MIXED FRUIT">MIXED FRUIT</label>
+            <input type="radio" value="HAZELNUT" name="flavour">
+            <label for="HAZELNUT ">HAZELNUT</label>
+            <input type="radio" value="BLACK CURRENT" name="flavour">
+            <label for="BLACK CURRENT ">BLACK CURRENT</label><br>
+            <input type="radio" value="BUTTERSCOTCH" name="flavour">
+            <label for="BUTTERSCOTCH ">BUTTERSCOTCH</label>
+            <input type="radio" value="RED VELVET" name="flavour">
+            <label for="RED VELVET ">RED VELVET</label>
+            <input type="radio" value="VANILLA" name="flavour">
+            <label for="VANILLA ">VANILLA</label>
+            <input type="radio" value="RASMALAI" name="flavour">
+            <label for="RASMALAI ">RASMALAI</label>
+        </form>
+        </div>
+        <div id="size">
+        <h3>SELECT SIZE:</h3>
+        <form>
+            <input type="radio" value="half kg" name="size"> 
+            <label for="half kg">0.5 kg</label>
+            <input type="radio" value="one kg" name="size">
+            <label for="one kg">1 kg</label>
+            <input type="radio" value="one and half kg" name="size">
+            <label for="one and half kg">1.5 kg</label>
+            <input type="radio" value="two kg" name="size">
+            <label for="two kg">2 kg</label>
+            <input type="radio" value="three kg" name="size">
+            <label for="three kg">3 kg</label>
+            <input type="radio" value="four kg" name="size">
+            <label for="four kg">4</label> kg</label>
+            <input type="radio" value="five kg" name="size">
+            <label for="five kg">5 kg</label>
+        </form>
+        </div>
+        <h4>ANY EXTRA SPECIFICATIONS:</h4>
+        <textarea></textarea><br>
+        <div id="submit">
+            <form>
+                <input type="button" value="ADD TO CART" id="cart">
+            </form>    
+        </div>
+        <div>
+            <h3>My cart</h3>
+            <ul id="cartItem">
+
+            </ul>
+        </div>
+        <div id="paymnt">
+            <h3> PAYMENT DETAILS:</h3>
+        </div>
+        </div>
+        <!-- <div id="float">
+            <img src="background.jpg" alt="image here">
+        </div> -->
+        <script src="./js/order.js"></script>
+    </main>
+<!-- <footer>
+    &copy; Copyright 2020. All Rights Reserved.<br>
+    <a href="mailto:littlechefsbakery@bakery.com">littlechefsbakery@bakery.com</a>
+</footer> -->
+ <footer>
+      <section class="social">
+        <div class="social-icon">
+          <img src="./images/social/001-instagram.png" alt="" srcset="" />
+        </div>
+        <div class="social-icon">
+          <img src="./images/social/002-facebook.png" alt="" srcset="" />
+        </div>
+        <div class="social-icon">
+          <img src="./images/social/003-youtube.png" alt="" srcset="" />
+        </div>
+        <div class="social-icon">
+          <img src="./images/social/004-whatsapp.png" alt="" srcset="" />
+        </div>
+      </section>
+      <p>Project_G09 Chukwuemeka_Kamini_Saravpal C0799116_C0803319_C0810593</p>
+      &copy; Copyright 2021. All Rights Reserved.
+      <a href="mailto:Project_G09@mylambton.ca">Project_G09@mylambton.ca</a>
+    </footer>
+</body>
+</html>

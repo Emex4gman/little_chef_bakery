@@ -11,6 +11,7 @@
   scroll-behavior: smooth;
 }
 /* 
+COLORS
 [7d6556, bca49d, fbe3e3, dfd3d3, c3c3c3, d9c791, efcb5e]
 */
 
@@ -22,8 +23,7 @@ body {
   background: url("../images/bg.jpg");
 }
 .logo {
-  /* max-width: 100%; */
-  width: 200px;
+  width: 150px;
   margin: auto;
 }
 .logo img {
@@ -139,7 +139,6 @@ nav a {
   width: 2em;
   height: 2em;
   border-radius: 2em;
-  /* background-color: greenyellow; */
   margin: 0 0.5em;
   cursor: pointer;
 }
@@ -151,15 +150,10 @@ footer {
   margin-top: 2em;
   text-align: center;
   margin-bottom: 1em;
-  /* background: url("../images/image_footer.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
 }
 .social-top {
   height: 150px;
   width: 300px;
-  /* background-color: green; */
   text-align: end;
   position: absolute;
   right: 0;
@@ -177,6 +171,7 @@ footer {
 .desktop {
   display: none;
 }
+
 /* HOME CSS */
 .desktop-nav {
   width: 100%;
@@ -211,11 +206,9 @@ footer {
     display: block;
   }
   .side-bar {
-    /* background-color: #bca49d; */
     width: 30%;
   }
   .main {
-    /* width: 35%; */
     padding: 0 2em;
   }
   .slides img {
@@ -237,7 +230,38 @@ footer {
   }
 }
 /* GALLERY CSS */
+.cake {
+  border-right: 0.1em rgb(82, 79, 79) solid;
+  border-left: 0.1em rgb(82, 79, 79) solid;
+  border-bottom: 0.1em rgb(82, 79, 79) solid;
+  padding: 0.5em;
+  margin: 0.5em;
+  box-shadow: rgb(185, 184, 180) 0.5em 0.5em 0.5em;
+}
 
+.gallery {
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+}
 /* ORDER CSS */
-
+main {
+  overflow: hidden;
+}
+.order {
+  max-width: 1000px;
+  margin: auto;
+}
+#container {
+  padding: 0 2em;
+}
+#float {
+  float: right;
+  width: 50%;
+  margin-right: 2em;
+}
 /* ABOUT CSS */
+.about {
+  max-width: 1000px;
+  margin: auto;
+}
