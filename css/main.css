@@ -134,11 +134,16 @@ nav a {
 .testimony {
   text-align: center;
 }
+.testimony-img img {
+  max-width: 100%;
+  /* display: none; */
+  border-radius: 10em;
+}
 .testimony-img {
   width: 10em;
   height: 10em;
   border-radius: 10em;
-  background: url("../images/img1.jpg");
+  /* background: url("../images/img1.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
