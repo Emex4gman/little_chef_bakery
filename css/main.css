@@ -5,7 +5,21 @@
   src: url("../font/patuaone-regular-webfont.woff") format("woff"),
     url("../font/PatuaOne-Regular.otf") format("opentype");
 }
+::-webkit-scrollbar {
+  width: 0.4em;
+}
 
+::-webkit-scrollbar-track {
+  background: #7d6556;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efcb5e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: green; */
+}
 * {
   font-family: "Pangolin", cursive;
   scroll-behavior: smooth;
