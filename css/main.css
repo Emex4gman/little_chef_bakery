@@ -152,7 +152,7 @@ footer {
   margin-bottom: 1em;
 }
 .social-top {
-  height: 150px;
+  /* height: 150px; */
   width: 300px;
   text-align: end;
   position: absolute;
@@ -264,4 +264,61 @@ main {
 .about {
   max-width: 1000px;
   margin: auto;
+  padding: 0 1.4em;
+}
+
+#contact-us {
+  text-align: center;
+  padding: 30px;
+  background-color: #7d6556;
+  max-width: 600px;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-us h3 {
+  color: white;
+}
+#contact-us label {
+  font-size: 11px;
+  color: white;
+}
+#contact-us input {
+  display: block;
+  margin: 5px 0px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#contact-us textarea {
+  display: block;
+  margin: 5px 0px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  resize: none;
+}
+.form-submit-btn {
+  /* bca49d, fbe3e3, dfd3d3, c3c3c3, d9c791, efcb5e */
+  background-color: #bca49d;
+  color: white;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1em;
 }
