@@ -65,13 +65,16 @@ nav a {
   text-align: center;
   width: 100%;
   height: 350px;
-  background: url("../images/img1.jpg");
+  /* background: url("../images/img1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: all 0.5s ease-in-out;
 }
 .slides img {
   max-width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 11px 3px #1f1212;
 }
 .slide-control {
   margin: 1em 0;
@@ -102,6 +105,19 @@ nav a {
 .product-img img {
   max-width: 100%;
 }
+.product-content {
+  margin-bottom: 0.6em;
+}
+.product-content h3 {
+  margin: 0.2em 0;
+}
+.product-content p {
+  margin: 0.2em 0;
+}
+.product-content span {
+  margin: 0.2em 0;
+  font-weight: bolder;
+}
 .blog .img {
   width: 100%;
   height: 150px;
@@ -109,6 +125,11 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.blog h2 {
+  background-color: #dfd3d3;
+  margin: 050px 0px 0px 0;
+  padding: 0.4em;
 }
 .testimony {
   text-align: center;
@@ -212,8 +233,10 @@ footer {
     padding: 0 2em;
   }
   .slides img {
-    width: 500px;
-    height: 300px;
+    /* width: 500px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
   }
   .products,
   .testimonies {

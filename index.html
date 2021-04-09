@@ -58,16 +58,24 @@
       <div class="wrapper">
         <div class="main">
           <div class="slide-container">
-            <div class="slides">
-              <!-- <img src="./images/img1.jpg" alt="" srcset="" /> -->
+            <div class="slides" id="slide-img">
+              <img src="./images/img1.jpg" alt="" name="slideImg" srcset="" />
             </div>
             <div class="indicator"></div>
             <div class="slide-control">
               <span class="slide-prev">
-                <img src="./images/left-arrow.png" alt="" />
+                <img
+                  onclick="previousSlide()"
+                  src="./images/left-arrow.png"
+                  alt=""
+                />
               </span>
               <span class="slide-next">
-                <img src="./images/left-arrow.png" alt="" />
+                <img
+                  onclick="nextSlide()"
+                  src="./images/left-arrow.png"
+                  alt=""
+                />
               </span>
             </div>
           </div>
