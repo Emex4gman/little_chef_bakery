@@ -81,7 +81,7 @@ nav a {
   height: 350px;
   /* background: url("../images/img1.jpg"); */
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   transition: all 0.5s ease-in-out;
 }
