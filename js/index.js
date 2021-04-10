@@ -15,10 +15,14 @@ const imageLinks = [
   "img14.jpg",
 ];
 const imgPath = "./images/";
-
+const slideContainer = document.getElementById("slide-img");
 var slideIndex = 0;
 function startImageSlide() {
-  document.slideImg.src = imgPath + imageLinks[slideIndex];
+  slideContainer.style.backgroundImage = `url(${
+    imgPath + imageLinks[slideIndex]
+  })`;
+
+  // document.slideImg.src = imgPath + imageLinks[slideIndex];
   slideIndex++;
   if (slideIndex > imageLinks.length - 1) {
     slideIndex = 0;
