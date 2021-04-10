@@ -65,7 +65,7 @@
 
     <main class="order">
       <div id="container">
-        <form>
+        <form class="order-form">
           <div id="item">
             <h3>SELECT TYPE OF ITEM:</h3>
             <input
@@ -190,12 +190,15 @@
           </div>
           <h4>ANY EXTRA SPECIFICATIONS:</h4>
           <textarea cols="25" rows="5"></textarea><br />
-          <div id="submit">
+          <!-- <div id="submit">
             <input type="button" value="ADD TO CART" id="cart" />
-          </div>
+          </div> -->
         </form>
 
         <div id="paymnt">
+          <div>
+            <h1>Total Amount: $<span id="total-amount"> 0.0</span></h1>
+          </div>
           <h3>PAYMENT DETAILS:</h3>
           <form id="pay" name="pay">
             <p>
@@ -234,33 +237,24 @@
             <p>
               <b> Card Details:</b>
               <input
-                name="“card”"
+                name="card-name"
                 type="text"
-                maxlength="32"
-                size="32"
-                required
-                placeholder="Enter Your card number"
-              />
-            </p>
-            <p>
-              <input
-                name="“card”"
-                type="text"
-                maxlength="10"
-                size="10"
                 required
                 placeholder="Name on card"
               />
-              <input
-                name="“card”"
-                type="text"
-                maxlength="5"
-                size="5"
-                required
-                placeholder="CVV"
-              />
             </p>
-            <p><input type="submit" value="SUBMIT" /></p>
+            <div class="card-numbers">
+              <input
+                name="card"
+                type="number"
+                required
+                placeholder="Enter Your card number"
+              />
+              <input name="card-cvv" type="number" required placeholder="CVV" />
+            </div>
+            <div style="width: 100%; margin: auto; text-align: center">
+              <button type="submit">SUBMIT</button>
+            </div>
           </form>
         </div>
       </div>

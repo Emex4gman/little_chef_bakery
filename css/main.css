@@ -297,14 +297,76 @@ main {
   max-width: 1000px;
   margin: auto;
 }
+
 #container {
   padding: 0 2em;
+  display: block;
+  margin: auto;
+  justify-content: space-between;
 }
 #float {
   float: right;
   width: 50%;
   margin-right: 2em;
 }
+.order-form {
+  width: 100%;
+}
+.order-form select {
+  width: 100%;
+  padding: 0.6em;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+}
+.order-form h4 {
+  margin-bottom: 0;
+}
+.order-form textarea {
+  resize: none;
+  width: 100%;
+}
+#paymnt {
+  width: 100%;
+}
+#paymnt input[type="text"] {
+  width: 100%;
+  padding: 0.6em;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+}
+.card-numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.card-numbers input[type="number"]:nth-child(1) {
+  width: 60%;
+  padding: 0.6em;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+}
+.card-numbers input[type="number"]:nth-child(2) {
+  width: 20%;
+  padding: 0.6em;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+}
+
+#paymnt button {
+  margin-top: 2em;
+  width: 60%;
+  padding: 0.6em;
+  background-color: #7d6556;
+  color: #dfd3d3;
+  outline: none;
+  border: none;
+  border-radius: 0.4em;
+  font-weight: bold;
+}
+
 /* ABOUT CSS */
 .about {
   max-width: 1000px;
@@ -439,5 +501,14 @@ h1 {
   }
   .owners div {
     width: 27%;
+  }
+  #container {
+    display: flex;
+  }
+  #paymnt {
+    width: 40%;
+  }
+  .order-form {
+    width: 50%;
   }
 }
