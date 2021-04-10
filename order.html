@@ -12,7 +12,7 @@
       type="image/png"
       sizes="16x16"
     />
-    <title>Home - Little Chef Bakery</title>
+    <title>Order - Little Chef Bakery</title>
 
     <!-- <title>Project_G09 Chukwuemeka_Kamini_Saravpal</title> -->
   </head>
@@ -76,31 +76,57 @@
         <div id="flavours">
        
             <h3>SELECT FLAVOUR FOR CAKE OR CUPCAKES:</h3>
-        <form>
-            <input type="radio" value="CHOCOLATE TRUFFLE" name="flavour">
-            <label for="CHOCOLATE TRUFFLE">CHOCOLATE TRUFFLE</label>
-            <input type="radio" value="STRAWBERRY" name="flavour">
-            <label for="STRAWBERRY">STRAWBERRY</label>
-            <input type="radio" value="BLUEBERRY" name="flavour">
-            <label for="BLUEBERRY">BLUEBERRY</label>
-            <input type="radio" value="PINEAPPLE" name="flavour">
-            <label for="PINEAPPLE">PINEAPPLE</label><br>
-            <input type="radio" value="OREO" name="flavour">
-            <label for="OREO">OREO</label>
-            <input type="radio" value="MIXED FRUIT" name="flavour">
-            <label for="MIXED FRUIT">MIXED FRUIT</label>
-            <input type="radio" value="HAZELNUT" name="flavour">
-            <label for="HAZELNUT ">HAZELNUT</label>
-            <input type="radio" value="BLACK CURRENT" name="flavour">
-            <label for="BLACK CURRENT ">BLACK CURRENT</label><br>
-            <input type="radio" value="BUTTERSCOTCH" name="flavour">
-            <label for="BUTTERSCOTCH ">BUTTERSCOTCH</label>
-            <input type="radio" value="RED VELVET" name="flavour">
-            <label for="RED VELVET ">RED VELVET</label>
-            <input type="radio" value="VANILLA" name="flavour">
-            <label for="VANILLA ">VANILLA</label>
-            <input type="radio" value="RASMALAI" name="flavour">
-            <label for="RASMALAI ">RASMALAI</label>
+         <form>
+            <P><B> For Cakes:</B>
+              <select name="Options">
+                  <option>Oreo</option>
+                  <option>Chocolate Truffle</option>
+                  <option>Strawberry</option>
+                  <option>Bluberry</option>
+                  <option>Pineapple</option>
+                  <option>Mixed Fruit</option>
+                  <option>Hazelnut</option>
+                  <option>Black current</option>
+                  <option>Butterscotch</option>
+                  <option>Red velvet</option>
+                  <option>Vanilla</option>
+                  <option>Rasmalai</option>
+              </select></P>
+              <P><B> For Chocolates:</B>
+                <select name="Options">
+                    <option>Oreo</option>
+                    <option>Strawberry</option>
+                    <option>Dark Chocolate</option>
+                    <option>Tutty fruity</option>
+                    <option>Mango</option>
+                    <option>Orange</option>
+                    <option>liqior chocolates</option>
+                    <option>Dried berries</option>
+                </select></P>
+                <P><B> For Dry Cakes:</B>
+                  <select name="Options">
+                      <option>Jaggary</option>
+                      <option>Dates and Walnuts</option>
+                      <option>Chocochips</option>
+                      <option>Banana mix</option>
+                      <option>Dry fruit</option>
+                      <option>Tutty fruity</option>
+                      <option>Chirstmas cake</option>
+                      <option>Dry almond</option>
+                  </select></P>
+                  <P><B> For CUPCAKES:</B>
+                    <select name="Options">
+                        <option>Oreo</option>
+                        <option>Strawberry</option>
+                        <option>Bluberry</option>
+                        <option>Pineapple</option>
+                        <option>Mixed Fruit</option>
+                        <option>Hazelnut</option>
+                        <option>Black current</option>
+                        <option>Butterscotch</option>
+                        <option>Red velvet</option>
+                        <option>Vanilla</option>
+                    </select></P>
         </form>
         </div>
         <div id="size">
@@ -123,20 +149,33 @@
         </form>
         </div>
         <h4>ANY EXTRA SPECIFICATIONS:</h4>
-        <textarea></textarea><br>
+        <textarea cols="25" rows="5"></textarea><br>
         <div id="submit">
             <form>
                 <input type="button" value="ADD TO CART" id="cart">
             </form>    
         </div>
-        <div>
+        <!-- <div>
             <h3>My cart</h3>
             <ul id="cartItem">
 
             </ul>
-        </div>
+        </div> -->
         <div id="paymnt">
             <h3> PAYMENT DETAILS:</h3>
+              <form id="pay" name="pay">
+              <P><B> First Name:</B> 
+              <INPUT NAME=“firstName” TYPE="text" required placeholder="Enter First Name" MAXLENGTH=27 SIZE =27></P>
+              <P><B> Last Name:</B> 
+              <INPUT NAME=“lastName” TYPE="text" MAXLENGTH=27 SIZE =27 required placeholder="Enter Last Name"></P>
+              <P><B> Email:</B> 
+              <INPUT NAME=“email” TYPE="text" MAXLENGTH=32 SIZE =32 required placeholder="Enter Your Email"></P>
+              <P><B> Card Details:</B> 
+              <INPUT NAME=“card” TYPE="text" MAXLENGTH=32 SIZE =32 required placeholder="Enter Your card number"></P>
+              <P><INPUT NAME=“card” TYPE="text" MAXLENGTH=10 SIZE =10 required placeholder="Name on card">
+                  <INPUT NAME=“card” TYPE="text" MAXLENGTH=5 SIZE =5 required placeholder="CVV"></P>
+              <P><input type="submit" value="SUBMIT"></P>
+          </form>
         </div>
         </div>
         <!-- <div id="float">
