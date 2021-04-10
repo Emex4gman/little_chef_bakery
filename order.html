@@ -17,15 +17,23 @@
     <!-- <title>Project_G09 Chukwuemeka_Kamini_Saravpal</title> -->
   </head>
 
-  <style></style>
   <body>
     <header>
       <div class="brand_image">
         <div class="desktop social-top">
-          <img src="./images/social/001-instagram.png" />
-          <img src="./images/social/002-facebook.png" />
-          <img src="./images/social/003-youtube.png" />
-          <img src="./images/social/004-whatsapp.png" />
+          <img
+            alt="link image instagram"
+            src="./images/social/001-instagram.png"
+          />
+          <img
+            alt="link image facebook"
+            src="./images/social/002-facebook.png"
+          />
+          <img alt="link image youtube" src="./images/social/003-youtube.png" />
+          <img
+            alt="link image whatsapp"
+            src="./images/social/004-whatsapp.png"
+          />
           <p>House no 23/3 near Mahavir mandir Samana,147101</p>
           <p>+49 1234 56789-0</p>
         </div>
@@ -55,157 +63,228 @@
       </nav>
     </header>
 
-
     <main class="order">
-        <div id="container">
-        <div id="item">
-        <h3>SELECT TYPE OF ITEM:</h3>
+      <div id="container">
         <form>
-            <input type="checkbox" value="CAKES" class="checkboxItems">
+          <div id="item">
+            <h3>SELECT TYPE OF ITEM:</h3>
+            <input
+              type="checkbox"
+              id="CAKES"
+              value="CAKES"
+              class="checkboxItems"
+            />
             <label for="CAKES">CAKES</label>
-            <input type="checkbox" value="DRY CAKES" class="checkboxItems">
-            <label for="DRY CAKE">DRY CAKE</label>
-            <input type="checkbox" value="BROWNIE" class="checkboxItems">
+            <input
+              type="checkbox"
+              id="DRYCAKE"
+              value="DRYCAKES"
+              class="checkboxItems"
+            />
+            <label for="DRYCAKE">DRY CAKE</label>
+            <input
+              type="checkbox"
+              id="BROWNIE"
+              value="BROWNIE"
+              class="checkboxItems"
+            />
             <label for="BROWNIE">BROWNIE</label>
-            <input type="checkbox" value="CUPCAKES" class="checkboxItems">
+            <input
+              type="checkbox"
+              id="CUPCAKES"
+              value="CUPCAKES"
+              class="checkboxItems"
+            />
             <label for="CUPCAKES">CUPCAKES</label>
-            <input type="checkbox" value="CHOCOLATES" class="checkboxItems">
+            <input
+              type="checkbox"
+              id="CHOCOLATES"
+              value="CHOCOLATES"
+              class="checkboxItems"
+            />
             <label for="CHOCOLATES">CHOCOLATES</label>
-        </form>
-        </div>
-        <div id="flavours">
-       
+          </div>
+          <div id="flavours">
             <h3>SELECT FLAVOUR FOR CAKE OR CUPCAKES:</h3>
-         <form>
-            <P><B> For Cakes:</B>
+            <p>
+              <b> For Cakes:</b>
               <select name="Options">
-                  <option>Oreo</option>
-                  <option>Chocolate Truffle</option>
-                  <option>Strawberry</option>
-                  <option>Bluberry</option>
-                  <option>Pineapple</option>
-                  <option>Mixed Fruit</option>
-                  <option>Hazelnut</option>
-                  <option>Black current</option>
-                  <option>Butterscotch</option>
-                  <option>Red velvet</option>
-                  <option>Vanilla</option>
-                  <option>Rasmalai</option>
-              </select></P>
-              <P><B> For Chocolates:</B>
-                <select name="Options">
-                    <option>Oreo</option>
-                    <option>Strawberry</option>
-                    <option>Dark Chocolate</option>
-                    <option>Tutty fruity</option>
-                    <option>Mango</option>
-                    <option>Orange</option>
-                    <option>liqior chocolates</option>
-                    <option>Dried berries</option>
-                </select></P>
-                <P><B> For Dry Cakes:</B>
-                  <select name="Options">
-                      <option>Jaggary</option>
-                      <option>Dates and Walnuts</option>
-                      <option>Chocochips</option>
-                      <option>Banana mix</option>
-                      <option>Dry fruit</option>
-                      <option>Tutty fruity</option>
-                      <option>Chirstmas cake</option>
-                      <option>Dry almond</option>
-                  </select></P>
-                  <P><B> For CUPCAKES:</B>
-                    <select name="Options">
-                        <option>Oreo</option>
-                        <option>Strawberry</option>
-                        <option>Bluberry</option>
-                        <option>Pineapple</option>
-                        <option>Mixed Fruit</option>
-                        <option>Hazelnut</option>
-                        <option>Black current</option>
-                        <option>Butterscotch</option>
-                        <option>Red velvet</option>
-                        <option>Vanilla</option>
-                    </select></P>
-        </form>
-        </div>
-        <div id="size">
-        <h3>SELECT SIZE:</h3>
-        <form>
-            <input type="radio" value="half kg" name="size"> 
-            <label for="half kg">0.5 kg</label>
-            <input type="radio" value="one kg" name="size">
-            <label for="one kg">1 kg</label>
-            <input type="radio" value="one and half kg" name="size">
-            <label for="one and half kg">1.5 kg</label>
-            <input type="radio" value="two kg" name="size">
-            <label for="two kg">2 kg</label>
-            <input type="radio" value="three kg" name="size">
-            <label for="three kg">3 kg</label>
-            <input type="radio" value="four kg" name="size">
-            <label for="four kg">4</label> kg</label>
-            <input type="radio" value="five kg" name="size">
-            <label for="five kg">5 kg</label>
-        </form>
-        </div>
-        <h4>ANY EXTRA SPECIFICATIONS:</h4>
-        <textarea cols="25" rows="5"></textarea><br>
-        <div id="submit">
-            <form>
-                <input type="button" value="ADD TO CART" id="cart">
-            </form>    
-        </div>
-        <!-- <div>
-            <h3>My cart</h3>
-            <ul id="cartItem">
+                <option>Oreo</option>
+                <option>Chocolate Truffle</option>
+                <option>Strawberry</option>
+                <option>Bluberry</option>
+                <option>Pineapple</option>
+                <option>Mixed Fruit</option>
+                <option>Hazelnut</option>
+                <option>Black current</option>
+                <option>Butterscotch</option>
+                <option>Red velvet</option>
+                <option>Vanilla</option>
+                <option>Rasmalai</option>
+              </select>
+            </p>
+            <p>
+              <b> For Chocolates:</b>
+              <select name="Options">
+                <option>Oreo</option>
+                <option>Strawberry</option>
+                <option>Dark Chocolate</option>
+                <option>Tutty fruity</option>
+                <option>Mango</option>
+                <option>Orange</option>
+                <option>liqior chocolates</option>
+                <option>Dried berries</option>
+              </select>
+            </p>
+            <p>
+              <b> For Dry Cakes:</b>
+              <select name="Options">
+                <option>Jaggary</option>
+                <option>Dates and Walnuts</option>
+                <option>Chocochips</option>
+                <option>Banana mix</option>
+                <option>Dry fruit</option>
+                <option>Tutty fruity</option>
+                <option>Chirstmas cake</option>
+                <option>Dry almond</option>
+              </select>
+            </p>
+            <p>
+              <b> For CUPCAKES:</b>
+              <select name="Options">
+                <option>Oreo</option>
+                <option>Strawberry</option>
+                <option>Bluberry</option>
+                <option>Pineapple</option>
+                <option>Mixed Fruit</option>
+                <option>Hazelnut</option>
+                <option>Black current</option>
+                <option>Butterscotch</option>
+                <option>Red velvet</option>
+                <option>Vanilla</option>
+              </select>
+            </p>
+          </div>
+          <div id="size">
+            <h3>SELECT SIZE:</h3>
 
-            </ul>
-        </div> -->
+            <input type="radio" value="halfkg" id="halfkg" name="size" />
+            <label for="halfkg">0.5 kg</label>
+            <input type="radio" value="onekg" id="onekg" name="size" />
+            <label for="onekg">1 kg</label>
+            <input
+              type="radio"
+              value="oneandhalfkg"
+              id="oneandhalfkg"
+              name="size"
+            />
+            <label for="oneandhalfkg">1.5 kg</label>
+            <input type="radio" value="twokg" id="twokg" name="size" />
+            <label for="twokg">2 kg</label>
+            <input type="radio" value="threekg" id="threekg" name="size" />
+            <label for="threekg">3 kg</label>
+            <input type="radio" value="fourkg" id="fourkg" name="size" />
+            <label for="fourkg">4 kg</label>
+            <input type="radio" value="fivekg" id="fivekg" name="size" />
+            <label for="fivekg">5 kg</label>
+          </div>
+          <h4>ANY EXTRA SPECIFICATIONS:</h4>
+          <textarea cols="25" rows="5"></textarea><br />
+          <div id="submit">
+            <input type="button" value="ADD TO CART" id="cart" />
+          </div>
+        </form>
+
         <div id="paymnt">
-            <h3> PAYMENT DETAILS:</h3>
-              <form id="pay" name="pay">
-              <P><B> First Name:</B> 
-              <INPUT NAME=“firstName” TYPE="text" required placeholder="Enter First Name" MAXLENGTH=27 SIZE =27></P>
-              <P><B> Last Name:</B> 
-              <INPUT NAME=“lastName” TYPE="text" MAXLENGTH=27 SIZE =27 required placeholder="Enter Last Name"></P>
-              <P><B> Email:</B> 
-              <INPUT NAME=“email” TYPE="text" MAXLENGTH=32 SIZE =32 required placeholder="Enter Your Email"></P>
-              <P><B> Card Details:</B> 
-              <INPUT NAME=“card” TYPE="text" MAXLENGTH=32 SIZE =32 required placeholder="Enter Your card number"></P>
-              <P><INPUT NAME=“card” TYPE="text" MAXLENGTH=10 SIZE =10 required placeholder="Name on card">
-                  <INPUT NAME=“card” TYPE="text" MAXLENGTH=5 SIZE =5 required placeholder="CVV"></P>
-              <P><input type="submit" value="SUBMIT"></P>
+          <h3>PAYMENT DETAILS:</h3>
+          <form id="pay" name="pay">
+            <p>
+              <b> First Name:</b>
+              <input
+                name="“firstName”"
+                type="text"
+                required
+                placeholder="Enter First Name"
+                maxlength="27"
+                size="27"
+              />
+            </p>
+            <p>
+              <b> Last Name:</b>
+              <input
+                name="“lastName”"
+                type="text"
+                maxlength="27"
+                size="27"
+                required
+                placeholder="Enter Last Name"
+              />
+            </p>
+            <p>
+              <b> Email:</b>
+              <input
+                name="“email”"
+                type="text"
+                maxlength="32"
+                size="32"
+                required
+                placeholder="Enter Your Email"
+              />
+            </p>
+            <p>
+              <b> Card Details:</b>
+              <input
+                name="“card”"
+                type="text"
+                maxlength="32"
+                size="32"
+                required
+                placeholder="Enter Your card number"
+              />
+            </p>
+            <p>
+              <input
+                name="“card”"
+                type="text"
+                maxlength="10"
+                size="10"
+                required
+                placeholder="Name on card"
+              />
+              <input
+                name="“card”"
+                type="text"
+                maxlength="5"
+                size="5"
+                required
+                placeholder="CVV"
+              />
+            </p>
+            <p><input type="submit" value="SUBMIT" /></p>
           </form>
         </div>
-        </div>
-        <!-- <div id="float">
-            <img src="background.jpg" alt="image here">
-        </div> -->
-       
+      </div>
     </main>
-<!-- <footer>
-    &copy; Copyright 2020. All Rights Reserved.<br>
-    <a href="mailto:littlechefsbakery@bakery.com">littlechefsbakery@bakery.com</a>
-</footer> -->
- <footer>
-      <section class="social">
+
+    <footer>
+      <div class="social">
         <div class="social-icon">
-          <img src="./images/social/001-instagram.png" alt="" srcset="" />
+          <img src="./images/social/001-instagram.png" alt="instagram image" />
         </div>
         <div class="social-icon">
-          <img src="./images/social/002-facebook.png" alt="" srcset="" />
+          <img src="./images/social/002-facebook.png" alt="facebook image" />
         </div>
         <div class="social-icon">
-          <img src="./images/social/003-youtube.png" alt="" srcset="" />
+          <img src="./images/social/003-youtube.png" alt="youtube image" />
         </div>
         <div class="social-icon">
-          <img src="./images/social/004-whatsapp.png" alt="" srcset="" />
+          <img src="./images/social/004-whatsapp.png" alt="whatsapp image" />
         </div>
-      </section>
+      </div>
       <p>Project_G09 Chukwuemeka_Kamini_Saravpal C0799116_C0803319_C0810593</p>
       &copy; Copyright 2021. All Rights Reserved.
       <a href="mailto:Project_G09@mylambton.ca">Project_G09@mylambton.ca</a>
     </footer>
-     <script src="./js/order.js"></script>
-</body>
+    <script src="./js/order.js"></script>
+  </body>
 </html>

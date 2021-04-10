@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 @font-face {
   font-family: "CustomFont";
@@ -5,6 +6,7 @@
   src: url("../font/patuaone-regular-webfont.woff") format("woff"),
     url("../font/PatuaOne-Regular.otf") format("opentype");
 }
+
 ::-webkit-scrollbar {
   width: 0.4em;
 }
@@ -36,6 +38,12 @@ body {
   padding: 0;
   background: url("../images/bg.jpg");
 }
+.divider {
+  height: 3px;
+  background: transparent url("../images/divider.png") repeat-x 50% 50%;
+  margin: 35px;
+  border: 0;
+}
 .logo {
   width: 150px;
   margin: auto;
@@ -55,7 +63,7 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  font-family: "CustomFont";
+  font-family: "Leckerli One", cursive;
 }
 .mobile-nav {
   margin-bottom: 3em;
@@ -116,6 +124,9 @@ nav a {
   width: 80%;
   margin: auto;
 }
+.product {
+  margin-bottom: 2em;
+}
 .product-img {
   width: 60%;
   margin: auto;
@@ -135,6 +146,9 @@ nav a {
 .product-content span {
   margin: 0.2em 0;
   font-weight: bolder;
+  background-image: url("../images/cash.png");
+  background-size: cover;
+  padding: 0.3em;
 }
 .blog .img {
   width: 100%;
@@ -148,6 +162,21 @@ nav a {
   background-color: #dfd3d3;
   margin: 050px 0px 0px 0;
   padding: 0.4em;
+  font-family: "Leckerli One", cursive;
+  /* color: white; */
+}
+.blog button {
+  padding: 0.7em;
+  font-weight: bold;
+  background-color: #7d6556;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.testimonies {
+  background-color: #bca49d;
+  padding: 2em;
 }
 .testimony {
   text-align: center;
@@ -156,6 +185,7 @@ nav a {
   max-width: 100%;
   /* display: none; */
   border-radius: 10em;
+  box-shadow: -1px 0px 20px 1px grey;
 }
 .testimony-img {
   width: 10em;
@@ -170,6 +200,7 @@ nav a {
 
 .testimony-name {
   font-weight: bold;
+  font-family: "Leckerli One", cursive;
 }
 
 .hours {
@@ -337,6 +368,7 @@ main {
   margin-top: 1em;
 }
 .owners {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -346,12 +378,24 @@ main {
 .owners div {
   width: 100%;
 }
+.owner {
+  max-width: 15em;
+}
+.owner h4 {
+  font-family: "Leckerli One", cursive;
+  margin: 0;
+}
 .owner img {
   max-width: 100%;
   border-radius: 100%;
+  box-shadow: -1px 0px 20px 1px grey;
 }
 .about {
   text-align: center;
+}
+.about h1,
+h1 {
+  font-family: "Leckerli One", cursive;
 }
 
 @media screen and (min-width: 950px) {
