@@ -242,43 +242,7 @@ footer {
 .desktop-nav a {
   color: white;
 }
-@media screen and (min-width: 950px) {
-  .mobile-nav,
-  .mobile {
-    display: none;
-  }
-  .logo {
-    margin: 0;
-  }
-  .desktop {
-    display: block;
-  }
-  .side-bar {
-    width: 30%;
-  }
-  .main {
-    padding: 0 2em;
-  }
-  .slides img {
-    /* width: 500px;
-    height: 300px; */
-    width: 100%;
-    height: 100%;
-  }
-  .products,
-  .testimonies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .product {
-    width: 30%;
-  }
-  .blog p,
-  .blog button {
-    text-align: left;
-  }
-}
+
 /* GALLERY CSS */
 .cake {
   border-right: 0.1em rgb(82, 79, 79) solid;
@@ -371,4 +335,65 @@ main {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 1em;
+}
+.owners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.owners div {
+  width: 100%;
+}
+.owner img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+.about {
+  text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+  .mobile-nav,
+  .mobile {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+  .desktop {
+    display: block;
+  }
+  .side-bar {
+    width: 30%;
+  }
+  .main {
+    padding: 0 2em;
+  }
+  .slides img {
+    /* width: 500px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
+  }
+  .products,
+  .testimonies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product {
+    width: 30%;
+  }
+  .blog p,
+  .blog button {
+    text-align: left;
+  }
+  .owners {
+    flex-direction: row;
+  }
+  .owners div {
+    width: 27%;
+  }
 }
