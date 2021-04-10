@@ -15,6 +15,7 @@ const imageLinks = [
   "img14.jpg",
 ];
 const imgPath = "./images/";
+
 var slideIndex = 0;
 function startImageSlide() {
   document.slideImg.src = imgPath + imageLinks[slideIndex];
