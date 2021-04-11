@@ -247,6 +247,10 @@ footer {
   width: 1.6em;
   cursor: pointer;
 }
+.social-top a,
+.social a {
+  text-decoration: none;
+}
 .desktop {
   display: none;
 }
