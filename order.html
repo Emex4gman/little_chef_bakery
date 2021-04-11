@@ -64,51 +64,26 @@
     </header>
 
     <main class="order">
-      <div id="container">
-        <form class="order-form">
+      <form id="container" class="main-form">
+        <div class="order-form">
           <div id="item">
             <h3>SELECT TYPE OF ITEM:</h3>
-            <input
-              type="checkbox"
-              id="CAKES"
-              value="CAKES"
-              class="checkboxItems"
-            />
+            <input type="checkbox" id="CAKES" class="checkboxItems" checked />
             <label for="CAKES">CAKES</label>
-            <input
-              type="checkbox"
-              id="DRYCAKE"
-              value="DRYCAKES"
-              class="checkboxItems"
-            />
+            <input type="checkbox" id="DRYCAKE" class="checkboxItems" />
             <label for="DRYCAKE">DRY CAKE</label>
-            <input
-              type="checkbox"
-              id="BROWNIE"
-              value="BROWNIE"
-              class="checkboxItems"
-            />
-            <label for="BROWNIE">BROWNIE</label>
-            <input
-              type="checkbox"
-              id="CUPCAKES"
-              value="CUPCAKES"
-              class="checkboxItems"
-            />
+            <!-- <input type="checkbox" id="BROWNIE" class="checkboxItems" />
+            <label for="BROWNIE">BROWNIE</label> -->
+            <input type="checkbox" id="CUPCAKES" class="checkboxItems" />
             <label for="CUPCAKES">CUPCAKES</label>
-            <input
-              type="checkbox"
-              id="CHOCOLATES"
-              value="CHOCOLATES"
-              class="checkboxItems"
-            />
+            <input type="checkbox" id="CHOCOLATES" class="checkboxItems" />
             <label for="CHOCOLATES">CHOCOLATES</label>
           </div>
           <div id="flavours">
             <h3>SELECT FLAVOUR FOR CAKE OR CUPCAKES:</h3>
             <p>
               <b> For Cakes:</b>
-              <select name="Options">
+              <select name="cakes">
                 <option>Oreo</option>
                 <option>Chocolate Truffle</option>
                 <option>Strawberry</option>
@@ -125,7 +100,7 @@
             </p>
             <p>
               <b> For Chocolates:</b>
-              <select name="Options">
+              <select name="chocolates">
                 <option>Oreo</option>
                 <option>Strawberry</option>
                 <option>Dark Chocolate</option>
@@ -138,7 +113,7 @@
             </p>
             <p>
               <b> For Dry Cakes:</b>
-              <select name="Options">
+              <select name="dryCake">
                 <option>Jaggary</option>
                 <option>Dates and Walnuts</option>
                 <option>Chocochips</option>
@@ -151,7 +126,7 @@
             </p>
             <p>
               <b> For CUPCAKES:</b>
-              <select name="Options">
+              <select name="cupCake">
                 <option>Oreo</option>
                 <option>Strawberry</option>
                 <option>Bluberry</option>
@@ -168,24 +143,25 @@
           <div id="size">
             <h3>SELECT SIZE:</h3>
 
-            <input type="radio" value="halfkg" id="halfkg" name="size" />
+            <input type="radio" value="0.5" id="halfkg" name="size" />
             <label for="halfkg">0.5 kg</label>
-            <input type="radio" value="onekg" id="onekg" name="size" />
+
+            <input type="radio" value="1" id="onekg" name="size" />
             <label for="onekg">1 kg</label>
-            <input
-              type="radio"
-              value="oneandhalfkg"
-              id="oneandhalfkg"
-              name="size"
-            />
+
+            <input type="radio" value="1.5" id="oneandhalfkg" name="size" />
             <label for="oneandhalfkg">1.5 kg</label>
-            <input type="radio" value="twokg" id="twokg" name="size" />
+
+            <input type="radio" value="2" id="twokg" name="size" />
             <label for="twokg">2 kg</label>
-            <input type="radio" value="threekg" id="threekg" name="size" />
+
+            <input type="radio" value="3" id="threekg" name="size" />
             <label for="threekg">3 kg</label>
-            <input type="radio" value="fourkg" id="fourkg" name="size" />
+
+            <input type="radio" value="4" id="fourkg" name="size" />
             <label for="fourkg">4 kg</label>
-            <input type="radio" value="fivekg" id="fivekg" name="size" />
+
+            <input type="radio" value="5" id="fivekg" name="size" />
             <label for="fivekg">5 kg</label>
           </div>
           <h4>ANY EXTRA SPECIFICATIONS:</h4>
@@ -193,14 +169,14 @@
           <!-- <div id="submit">
             <input type="button" value="ADD TO CART" id="cart" />
           </div> -->
-        </form>
+        </div>
 
         <div id="paymnt">
           <div>
             <h1>Total Amount: $<span id="total-amount"> 0.0</span></h1>
           </div>
           <h3>PAYMENT DETAILS:</h3>
-          <form id="pay" name="pay">
+          <div id="pay" name="pay">
             <p>
               <b> First Name:</b>
               <input
@@ -255,9 +231,9 @@
             <div style="width: 100%; margin: auto; text-align: center">
               <button type="submit">SUBMIT</button>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
     </main>
 
     <footer>

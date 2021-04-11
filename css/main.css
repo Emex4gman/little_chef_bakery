@@ -365,6 +365,7 @@ main {
   border: none;
   border-radius: 0.4em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* ABOUT CSS */

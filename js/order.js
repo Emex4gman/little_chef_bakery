@@ -1,36 +1,53 @@
-//let submitForm = document.getElementById('item');
-//console.log(submitForm);
+const mainForm = document.getElementsByClassName("main-form")[0];
 
-//submitForm.addEventListener('ADD TO CART', function(event){
-//event.preventDefault();
-//let itemType= document.getElementsByClassName('checkboxItems').value;
-//console.log(`${itemType}`)
-//document,getElementByClassName('checkboxItems').value="";
+const cakeItem = document.getElementById("CAKES");
+let cakesOption = mainForm.cakes;
 
-//let myItem = document.createElement('li');
-//let newItem = document.createTextNode(`${itemType}`);
-//console.log(myItem);
-//myItem.appendChild(newItem);
-//document.getElementById('cartItem').appendChild(myItem);
-//});
+const dryCakeItem = document.getElementById("DRYCAKE");
+let dryCakeOption = mainForm.dryCake;
 
-// let btnCart= document.getElementById('cart'); //assigning button element to a variable
-// console.log(btnCart);
-// btnCart.addEventListener('click', (event)=>{ // adding event listener to the button
-//     var inputTA= document.createElement('input'); //creating a new element “Text Area”
-//     var paymentMode= document.createElement('button'); //creating a new element “Button”
-//     paymentMode.setAttribute('name', 'submit'); //adding attributes 'name' to  Button.
-//     paymentMode.setAttribute('value','dfdfd'); //adding attributes 'value' to  Button.
+const cupCakeItem = document.getElementById("CUPCAKES");
+let cupCakeOption = mainForm.cupCake;
 
-//     linebreak= document.createElement('br'); // creating a “New line “ element “br”
-//     console.log(paymentMode);
-//     inputTA.setAttribute('type','radio'); //adding attributes 'name' to  text area
-//     inputTA.setAttribute('name','payment'); //adding attributes 'name. to radio button
-//     let payment= document.getElementById('paymnt'); //selecting div paymnt
-//     payment.appendChild(inputTA);
-//     paymentMode.innerHTML="Place Order";
-//     inputTA.innerHTML="credi card";
+const chItem = document.getElementById("CHOCOLATES");
+let chocolatesOption = mainForm.chocolates;
 
-//     payment.appendChild(linebreak); //adding “br” to div
-//     payment.appendChild(paymentMode); //adding “button” to div
-// });
+mainForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("Form is linked");
+  if (mainForm.size.value === "") {
+    alert("You are yet to pick an item size");
+    return false;
+  }
+
+  alert(
+    "Your order has been made, your order details will be sent to your email"
+  );
+});
+const checkWhichItemWasPicked = () => {
+  if (cakeItem.checked === true) {
+    cakesOption.style.display = "block";
+  } else {
+    cakesOption.style.display = "none";
+  }
+  if (chItem.checked === true) {
+    chocolatesOption.style.display = "block";
+  } else {
+    chocolatesOption.style.display = "none";
+  }
+  if (dryCakeItem.checked === true) {
+    dryCakeOption.style.display = "block";
+  } else {
+    dryCakeOption.style.display = "none";
+  }
+  if (cupCakeItem.checked === true) {
+    cupCakeOption.style.display = "block";
+  } else {
+    cupCakeOption.style.display = "none";
+  }
+};
+checkWhichItemWasPicked();
+
+document.getElementById("item").addEventListener("click", (e) => {
+  checkWhichItemWasPicked();
+});
