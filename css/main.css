@@ -250,6 +250,8 @@ footer {
 .social-top a,
 .social a {
   text-decoration: none;
+  font-family: "CustomFont";
+  color: black;
 }
 .desktop {
   display: none;
