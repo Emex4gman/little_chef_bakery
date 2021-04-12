@@ -355,19 +355,18 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.card-numbers input[type="number"]:nth-child(1) {
-  width: 60%;
+.card-numbers input {
   padding: 0.6em;
   outline: none;
   border: 1px solid gray;
   border-radius: 0.3em;
 }
-.card-numbers input[type="number"]:nth-child(2) {
+
+.card-numbers #cardNum {
+  width: 60%;
+}
+.card-numbers #cvv {
   width: 20%;
-  padding: 0.6em;
-  outline: none;
-  border: 1px solid gray;
-  border-radius: 0.3em;
 }
 
 #paymnt button {
