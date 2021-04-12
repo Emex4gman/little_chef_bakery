@@ -474,6 +474,24 @@ h1 {
   font-family: "Leckerli One", cursive;
 }
 
+/* 
+BLOG POST
+*/
+.post-container {
+  /* text-align: center; */
+  width: 75%;
+  padding: 1.2em;
+  margin: auto;
+}
+.post h1 {
+  text-align: center;
+}
+.post p {
+  text-align: justify;
+}
+.post-image img {
+  max-width: 100%;
+}
 @media screen and (min-width: 950px) {
   .mobile-nav,
   .mobile {
