@@ -297,12 +297,17 @@ audio {
   padding: 0.5em;
   margin: 0.5em;
   box-shadow: rgb(185, 184, 180) 0.5em 0.5em 0.5em;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
 }
 
 .gallery {
   margin: auto;
   max-width: 1000px;
   text-align: center;
+}
+.gallery .cake:hover {
+  transform: scale(1.2);
 }
 /* ORDER CSS */
 main {
@@ -327,11 +332,12 @@ main {
 .order-form {
   width: 100%;
 }
+
 .order-form select {
   width: 100%;
   padding: 0.6em;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid #7d6556;
   border-radius: 0.3em;
 }
 .order-form h4 {
@@ -340,6 +346,8 @@ main {
 .order-form textarea {
   resize: none;
   width: 100%;
+  border: 1px solid #7d6556;
+  border-radius: 0.3em;
 }
 #paymnt {
   width: 100%;
@@ -348,7 +356,7 @@ main {
   width: 100%;
   padding: 0.6em;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid #7d6556;
   border-radius: 0.3em;
 }
 .card-numbers {
@@ -358,7 +366,7 @@ main {
 .card-numbers input {
   padding: 0.6em;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid #7d6556;
   border-radius: 0.3em;
 }
 
