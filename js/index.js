@@ -36,7 +36,9 @@ function previousSlide() {
   } else {
     slideIndex = imageLinks.length - 1;
   }
-  document.slideImg.src = imgPath + imageLinks[slideIndex];
+  slideContainer.style.backgroundImage = `url(${
+    imgPath + imageLinks[slideIndex]
+  })`;
 }
 function nextSlide() {
   if (slideIndex < imageLinks.length - 1) {
@@ -44,7 +46,9 @@ function nextSlide() {
   } else {
     slideIndex = 0;
   }
-  document.slideImg.src = imgPath + imageLinks[slideIndex];
+  slideContainer.style.backgroundImage = `url(${
+    imgPath + imageLinks[slideIndex]
+  })`;
 }
 
 startImageSlide();
